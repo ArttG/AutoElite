@@ -258,3 +258,114 @@
             <p>Copyright 2020 AutoEliteCars. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        function showOnlyBMW() {
+            
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card) {
+               card.style.display = 'none'; 
+           });
+
+           var bmwCards = document.querySelectorAll('.bmw');
+           bmwCards.forEach(function(card) {
+               card.style.display = 'block'; 
+           });
+       }
+
+       document.getElementById('bmwLogo').addEventListener('click', showOnlyBMW);
+
+       function showOnlyBENZ() {
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card) {
+               card.style.display = 'none'; 
+           });
+
+           var benzCards = document.querySelectorAll('.benz');
+           benzCards.forEach(function(card) {
+               card.style.display = 'block'; 
+           });
+       }
+
+       document.getElementById('benzlogo').addEventListener('click', showOnlyBENZ);
+
+       function showonlyAUDI(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var audiCards = document.querySelectorAll('.audi');
+           audiCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('audilogo').addEventListener('click', showonlyAUDI);
+
+       function showonlyLAMBO(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var lamboCards = document.querySelectorAll('.lambo');
+           lamboCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('lambologo').addEventListener('click', showonlyLAMBO);
+
+       function showonlyPORSCHE(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var porscheCards = document.querySelectorAll('.porsche');
+           porscheCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('porschelogo').addEventListener('click', showonlyPORSCHE);
+
+       function showonlyFERRARI(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var ferrariCards = document.querySelectorAll('.ferrari');
+           ferrariCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('ferrarilogo').addEventListener('click', showonlyFERRARI);
+
+       function showonlyBUGATTI(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var bugattiCards = document.querySelectorAll('.bugatti');
+           bugattiCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('bugattilogo').addEventListener('click', showonlyBUGATTI);
+
+       function showonlyGTR(){
+           var allCards = document.querySelectorAll('.card');
+           allCards.forEach(function(card){
+               card.style.display = 'none';
+           });
+
+           var gtrCards = document.querySelectorAll('.gtr');
+           gtrCards.forEach(function(card){
+               card.style.display = 'block';
+           })
+       }
+       document.getElementById('gtrlogo').addEventListener('click', showonlyGTR);
+
+   </script>
+</body>
+</html>
