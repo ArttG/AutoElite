@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 
     <link rel="stylesheet" href="register.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
 </head>
 <body>
+
     <header>
         <nav>
             <img src="img/car-logo.png" alt="" class="logo">
@@ -28,20 +29,20 @@
         </nav>
     </header>
     <div class="hero">
+
         <div class="register">
             <form onsubmit="return validateForm();">
-            <h2>Register</h2>
-            <p>Name:</p><input type="text" name="Name" id="name">
-            <p>Username:</p><input type="text" name="Username" id="username">
+            <h2>Log In</h2>
             <p>Email:</p><input type="email" name="Email" id="email">
-            <p>Password:</p><input type="password" name="Password" id="password">
-            <p>Confirm Password:</p><input type="password" name="Confirm Password" id="confirm"><br>
+            <p>Passowrd:</p><input type="password" name="Password" id="password"><br>
             <input type="submit" name="Register" id="submit" class="button">
-            <div class="acc"><p><span>Already have an account? </span><a href="login.html" class="login">Log in</a></p></div>
+            <div class="acc"><p><span>Don't have an account? </span><a href="Register.html" class="login">Sign Up</a></p></div>
             </form>
         </div>
-    </div>
     
+    </div>
+   <div class="space"></div>
+
     <footer>
         <div class="f">
             <h2>About AutoElite</h2>
@@ -68,25 +69,11 @@
             <p>Copyright 2020 AutoEliteCars. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script>
-        function validateForm() {
-            var name = document.getElementById('name').value;
-            var username = document.getElementById('username').value;
+        function validateForm(){
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
-            var confirm = document.getElementById('confirm').value;
-
-            var nameRegex = /^[a-zA-Z\s]+$/;
-            if (!nameRegex.test(name)) {
-                alert('Please enter a valid name');
-                return false;
-            }
-            var usernameRegex = /^[a-zA-Z\s]+$/;
-            if (!usernameRegex.test(username)) {
-                alert('Please enter a valid username');
-                return false;
-            }
 
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
@@ -98,13 +85,9 @@
                 alert('Password must be at least 6 characters');
                 return false;
             }
-            if (password !== confirm) {
-                alert('Passwords do not match.');
-                return false;
-            }
-
-            return true; 
+            return true;
         }
     </script>
+    
 </body>
 </html>
