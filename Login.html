@@ -31,11 +31,11 @@
     <div class="hero">
 
         <div class="register">
-            <form onsubmit="return validateForm();">
+            <form>
             <h2>Log In</h2>
             <p>Email:</p><input type="email" name="Email" id="email">
             <p>Passowrd:</p><input type="password" name="Password" id="password"><br>
-            <input type="submit" name="Register" id="submit" class="button">
+            <input type="submit" value="Log in" id="submit" class="button">
             <div class="acc"><p><span>Don't have an account? </span><a href="Register.html" class="login">Sign Up</a></p></div>
             </form>
         </div>
@@ -71,7 +71,10 @@
     </footer>
 
     <script>
-        function validateForm(){
+        window.onload = function() {
+            function validateForm(event) {
+                event.preventDefault();
+
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
 
@@ -80,14 +83,20 @@
                 alert('Please enter a valid email address');
                 return false;
             }
-
+    
             if (password.length < 6) {
                 alert('Password must be at least 6 characters');
                 return false;
+            }window.location.href = 'AutoElite.html';
             }
-            return true;
-        }
-    </script>
+    
+            var form = document.querySelector('form');
+            if (form) {
+                form.onsubmit = validateForm;
+            }
+        };
+        </script>
+
     
 </body>
 </html>
