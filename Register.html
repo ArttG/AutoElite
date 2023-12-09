@@ -29,14 +29,14 @@
     </header>
     <div class="hero">
         <div class="register">
-            <form onsubmit="return validateForm();">
+            <form>
             <h2>Register</h2>
             <p>Name:</p><input type="text" name="Name" id="name">
             <p>Username:</p><input type="text" name="Username" id="username">
             <p>Email:</p><input type="email" name="Email" id="email">
             <p>Password:</p><input type="password" name="Password" id="password">
             <p>Confirm Password:</p><input type="password" name="Confirm Password" id="confirm"><br>
-            <input type="submit" name="Register" id="submit" class="button">
+            <input type="submit" value="Register" id="submit" class="button">
             <div class="acc"><p><span>Already have an account? </span><a href="login.html" class="login">Log in</a></p></div>
             </form>
         </div>
@@ -70,41 +70,50 @@
     </footer>
     
     <script>
-        function validateForm() {
-            var name = document.getElementById('name').value;
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            var confirm = document.getElementById('confirm').value;
-
-            var nameRegex = /^[a-zA-Z\s]+$/;
-            if (!nameRegex.test(name)) {
-                alert('Please enter a valid name');
-                return false;
+        window.onload = function() {
+            function validateForm(event) {
+                event.preventDefault();
+    
+                var name = document.getElementById('name').value;
+                var username = document.getElementById('username').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var confirm = document.getElementById('confirm').value;
+    
+                var nameRegex = /^[a-zA-Z\s]+$/;
+                if (!nameRegex.test(name)) {
+                    alert('Please enter a valid name');
+                    return false;
+                }
+                var usernameRegex = /^[a-zA-Z\s]+$/;
+                if (!usernameRegex.test(username)) {
+                    alert('Please enter a valid username');
+                    return false;
+                }
+    
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address');
+                    return false;
+                }
+    
+                if (password.length < 6) {
+                    alert('Password must be at least 6 characters');
+                    return false;
+                }
+                if (password !== confirm) {
+                    alert('Passwords do not match.');
+                    return false;
+                }
+    
+                window.location.href = 'login.html';
             }
-            var usernameRegex = /^[a-zA-Z\s]+$/;
-            if (!usernameRegex.test(username)) {
-                alert('Please enter a valid username');
-                return false;
+    
+            var form = document.querySelector('form');
+            if (form) {
+                form.onsubmit = validateForm;
             }
-
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address');
-                return false;
-            }
-
-            if (password.length < 6) {
-                alert('Password must be at least 6 characters');
-                return false;
-            }
-            if (password !== confirm) {
-                alert('Passwords do not match.');
-                return false;
-            }
-
-            return true; 
-        }
+        };
     </script>
 </body>
 </html>
