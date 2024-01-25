@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+<?php include("header.php"); 
+?>
 
-    <link rel="stylesheet" href="contact.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-
-    <header>
-        <nav>
-            <img src="img/car-logo.png" alt="" class="logo">
-            <div class="menu">
-                <a href="AutoElite.html">Home</a>
-                <a href="Cars.html">Cars</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <a href="Register.html">Register</a>
-            </div>
-
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-        </nav>
-    </header>
     <div class="info">
     <div class="contact">
         <div class="logo">
@@ -68,12 +41,18 @@
 </div>
 <div class="flex">
     <div class="box">
-        <form action="">
+        <?php 
+        if (isset($_POST['contact'])) {
+            shtoContact($_POST['name'],$_POST['email'],$_POST['message']);
+        }
+        ?>
+        
+        <form method="post" id="contact">
             <h1>Contact Us</h1>
             <input type="text" name="name" placeholder="Enter Your Name">
             <input type="email" name="email" placeholder="Enter Your Email">
             <textarea name="message" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" name="contact" value="contact">Submit</button>
         </form>
     </div>
 </div>
