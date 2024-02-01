@@ -78,7 +78,6 @@ nav .menu a:hover::after{
 nav .social a i{
     color: white;
     font-size: 22px;
-    margin-left: 10px;
     transition: 0.3;
 }
 nav .social a i:hover{
@@ -425,8 +424,9 @@ footer{
 .footerleft{
     display: flex;
     align-items: center; 
-    margin-left: 8vh;
+    margin-left: 15vh;
     width: 19%; 
+    margin-bottom: 8vh;
     
 }
 .footerright{
@@ -1021,6 +1021,877 @@ h1 {
     background-color: #45a049;
 }
 
+
+/* RESPONSIVE MEDIA QUERRIES */
+
+@media only screen and (max-width: 600px){
+    header nav .logo{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    header nav{
+        margin-left: 1px;
+        width: 100%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        gap: 10px;
+    }
+    .social i{
+       display: none;
+    }
+
+    .hero .text h1{
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 30px; 
+
+    }
+    .hero .text h1 span{
+        font-size: 60px;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+    }
+    .slide-container{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .listaLogovIndex{
+        margin-left: 100px;
+
+    }
+    .categoryIndex li img{
+        height: 80px;
+        width: 100px;
+    }
+    .logoslider-containerIndex {
+        max-width: 45vh; 
+    }
+    .arrivals{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .footer {
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .footerleft {
+        margin-right: 10px; /* Adjust as needed */
+        margin-top: 1vh;
+        width: 19%;
+    }
+
+    .footerright h2 {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    .footercenter {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+    .hide{
+        display: none;
+    }
+    .goleft{
+        margin-right: 130px;
+    }
+    .contact .logo{
+        font-size: 3.5vh;
+        padding-top: 2vh;
+    }
+    .contact{
+        margin-left: 2vh;
+        height: 15vh;
+        width: 25vh;
+      
+    }
+    .contact .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+    .contact .text h2{
+        font-size: 13px;
+    }
+    .flex{
+        margin-left: 15px;
+    }
+    .aboutboxdiv {
+        flex-direction: column;
+        width: auto;
+        margin-left: 2vw;
+        height: auto;
+    }
+
+    .aboutboxdiv-header {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .aboutboxdiv-header h1 {
+        font-size: 6vh;
+        margin-left: 100px;
+    }
+
+    .aboutboxdiv-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .login-form {
+        max-width: 100%;
+        width: auto;
+        margin:auto;
+    }
+    .main-container {
+        margin: 7vh 2vh; /* Adjust margins for smaller screens */
+    }
+
+    .product-container {
+        margin-left: 2vh;
+    }
+
+    .product-image-container {
+        height: auto;
+        width: 100%;
+    }
+
+    .product-image-container img {
+        height: auto;
+    }
+
+    .product-details {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .product-info-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .product-info {
+        font-size: 1.2em;
+    }
+
+    .kerri {
+        font-size: 4vh;
+    }
+
+    .flexdetails {
+        margin-top: 10px;
+    }
+
+    .boxdetails {
+        max-width: 100%;
+        margin-top: 1vh;
+        padding: 1vh;
+    }
+
+    .boxdetails h1 {
+        font-size: 3vh;
+    }
+
+    .boxdetails form {
+        height: auto;
+    }
+
+    .boxdetails input[type="text"],
+    .boxdetails input[type="email"],
+    .boxdetails textarea,
+    .boxdetails input[type="datetime-local"] {
+        width: 100%;
+    }
+
+    .boxdetails button {
+        font-size: 1.2em;
+    }
+    #main-content-index,
+    #main-content-index2 {
+        margin-left: 2vh; /* Adjust the margin as needed */
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .card-indexdash {
+        width: 90%; /* Adjust the width as needed */
+        height: auto;
+    }
+
+    .card-indexdash h2 {
+        font-size: 4vh;
+    }
+
+    .card-indexdash p {
+        font-size: 3.5vh;
+    }
+
+    .card-indexdash i {
+        font-size: 12vh;
+        margin-top: 2vh;
+    }
+    .table-dashboard-about {
+        width: 15vh;
+    }
+    .table-dashboard-about th{
+        padding-right: 47vh;
+    }
+    .aboutbutton {
+        padding: 5px 5px;
+        width: 15vh;
+        margin-left: 43vh;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    header nav .logo {
+        display: none;
+    }
+    header {
+        width: 100%;
+    }
+    header nav {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        gap: 10px;
+    }
+    .social i {
+        display: none;
+    }
+    .hero .text h1 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .hero .text h1 span {
+        font-size: 40px;
+    }
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+    .slide-container {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .listaLogovIndex {
+        margin-left: 100px;
+    }
+    .categoryIndex li img {
+        height: 60px;
+        width: 80px;
+    }
+    .logoslider-containerIndex {
+        max-width: 45vh;
+    }
+    .arrivals {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .footer {
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .footerleft {
+        margin-right: 10px; /* Adjust as needed */
+        margin-top: 1vh;
+        width: 19%;
+    }
+
+    .footerright h2 {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    .footercenter {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+    .hide {
+        display: none;
+    }
+    .goleft {
+        margin-right: 80px;
+    }
+    .contact .logo {
+        font-size: 3.5vh;
+        padding-top: 2vh;
+    }
+    .contact {
+        margin-left: 2vh;
+        height: 15vh;
+        width: 25vh;
+    }
+    .contact .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+    .contact .text h2 {
+        font-size: 13px;
+    }
+    .flex {
+        margin-left: 15px;
+    }
+    .aboutboxdiv {
+        flex-direction: column;
+        width: auto;
+        margin-left: 2vw;
+        height: auto;
+    }
+    .aboutboxdiv-header {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .aboutboxdiv-header h1 {
+        font-size: 6vh;
+        margin-left: 100px;
+    }
+    .aboutboxdiv-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .login-form {
+        max-width: 100%;
+        width: auto;
+        margin: auto;
+    }
+    .main-container {
+        margin: 5vh 2vh;
+    }
+    .product-container {
+        margin-left: 2vh;
+    }
+    .product-image-container {
+        height: auto;
+        width: 100%;
+    }
+    .product-image-container img {
+        height: auto;
+    }
+    .product-details {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .product-info-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .product-info {
+        font-size: 1.2em;
+    }
+    .kerri {
+        font-size: 3vh;
+    }
+    .flexdetails {
+        margin-top: 10px;
+    }
+    .boxdetails {
+        max-width: 100%;
+        margin-top: 1vh;
+        padding: 1vh;
+    }
+    .boxdetails h1 {
+        font-size: 2.5vh;
+    }
+    .boxdetails form {
+        height: auto;
+    }
+    .boxdetails input[type="text"],
+    .boxdetails input[type="email"],
+    .boxdetails textarea,
+    .boxdetails input[type="datetime-local"] {
+        width: 100%;
+    }
+    .boxdetails button {
+        font-size: 1.2em;
+    }
+    #main-content-index,
+    #main-content-index2 {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+    .card-indexdash {
+        width: 90%;
+        height: auto;
+    }
+    .card-indexdash h2 {
+        font-size: 3.5vh;
+    }
+    .card-indexdash p {
+        font-size: 3vh;
+    }
+    .card-indexdash i {
+        font-size: 10vh;
+        margin-top: 2vh;
+    }
+    .table-dashboard-about {
+        width: 15vh;
+    }
+    .table-dashboard-about th {
+        padding-right: 47vh;
+    }
+    .aboutbutton {
+        padding: 5px 5px;
+        width: 15vh;
+        margin-left: 43vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    header nav .logo {
+        display: block;
+    }
+    header {
+        width: 100%;
+    }
+    header nav {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        gap: 10px;
+    }
+    .social i {
+        display: none;
+    }
+    .hero .text h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .hero .text h1 span {
+        font-size: 60px;
+    }
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+    .slide-container {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .listaLogovIndex {
+        margin-left: 100px;
+    }
+    .categoryIndex li img {
+        height: 80px;
+        width: 100px;
+    }
+    .logoslider-containerIndex {
+        max-width: 45vh;
+    }
+    .arrivals {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .footer {
+        width: 100%;
+        font-size: 70%;
+    }
+
+    .footerleft {
+        margin-right: 10px; /* Adjust as needed */
+        margin-top: 1vh;
+        width: 19%;
+    }
+
+    .footerright h2 {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    .footercenter {
+        margin-top: 2vh;
+        margin-right: 10px; /* Adjust as needed */
+    }
+    .hide {
+        display: none;
+    }
+    .goleft {
+        margin-right: 130px;
+    }
+    .contact .logo {
+        font-size: 3.5vh;
+        padding-top: 2vh;
+    }
+    .contact {
+        margin-left: 2vh;
+        height: 15vh;
+        width: 25vh;
+    }
+    .contact .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+    .contact .text h2 {
+        font-size: 13px;
+    }
+    .flex {
+        margin-left: 15px;
+    }
+    .aboutboxdiv {
+        flex-direction: column;
+        width: auto;
+        margin-left: 2vw;
+        height: auto;
+    }
+    .aboutboxdiv-header {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .aboutboxdiv-header h1 {
+        font-size: 6vh;
+        margin-left: 100px;
+    }
+    .aboutboxdiv-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .login-form {
+        max-width: 100%;
+        width: auto;
+        margin: auto;
+    }
+    .main-container {
+        margin: 7vh 2vh;
+        /* Adjust margins for smaller screens */
+    }
+    .product-container {
+        margin-left: 2vh;
+    }
+    .product-image-container {
+        height: auto;
+        width: 100%;
+    }
+    .product-image-container img {
+        height: auto;
+    }
+    .product-details {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .product-info-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .product-info {
+        font-size: 1.2em;
+    }
+    .kerri {
+        font-size: 4vh;
+    }
+    .flexdetails {
+        margin-top: 10px;
+    }
+    .boxdetails {
+        max-width: 100%;
+        margin-top: 1vh;
+        padding: 1vh;
+    }
+    .boxdetails h1 {
+        font-size: 3vh;
+    }
+    .boxdetails form {
+        height: auto;
+    }
+    .boxdetails input[type="text"],
+    .boxdetails input[type="email"],
+    .boxdetails textarea,
+    .boxdetails input[type="datetime-local"] {
+        width: 100%;
+    }
+    .boxdetails button {
+        font-size: 1.2em;
+    }
+    #main-content-index,
+    #main-content-index2 {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+    .card-indexdash {
+        width: 90%;
+        height: auto;
+    }
+    .card-indexdash h2 {
+        font-size: 4vh;
+    }
+    .card-indexdash p {
+        font-size: 3.5vh;
+    }
+    .card-indexdash i {
+        font-size: 12vh;
+        margin-top: 2vh;
+    }
+    .table-dashboard-about {
+        width: 15vh;
+    }
+    .table-dashboard-about th {
+        padding-right: 47vh;
+    }
+    .aboutbutton {
+        padding: 5px 5px;
+        width: 15vh;
+        margin-left: 43vh;
+    }
+}
+@media only screen 
+        and (device-width: 430px) 
+        and (device-height: 932px) 
+        and (-webkit-device-pixel-ratio: 3) {
+    header nav .logo {
+        display: none;
+    }
+    header {
+        width: 100%;
+    }
+    header nav {
+        margin-left: 1px;
+        width: 100%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        gap: 10px;
+    }
+    .social i {
+        display: none;
+    }
+    .hero .text h1 {
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .hero .text h1 span {
+        font-size: 60px;
+    }
+    .hero {
+        width: 100%;
+        height: 100vh;
+    }
+    .slide-container {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .listaLogovIndex {
+        margin-left: 100px;
+    }
+    .categoryIndex li img {
+        height: 80px;
+        width: 100px;
+    }
+    .logoslider-containerIndex {
+        max-width: 45vh;
+    }
+    .arrivals {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    footer {
+        width: 550px;
+        font-size: 70%;
+    }
+    .f h2 {
+        margin-top: 2.5vh;
+        font-size: 2vh;
+    }
+    .footerleft {
+        margin-right: 50px;
+        margin-top: 1vh;
+        width: 19%;
+    }
+    .footerright h2 {
+        margin-top: 2vh;
+        margin-right: 600px;
+    }
+    .footercenter {
+        margin-top: 2vh;
+        margin-right: 20vh;
+    }
+    .hide {
+        display: none;
+    }
+    .goleft {
+        margin-right: 130px;
+    }
+    .contact .logo {
+        font-size: 3.5vh;
+        padding-top: 2vh;
+    }
+    .contact {
+        margin-left: 2vh;
+        height: 15vh;
+        width: 25vh;
+    }
+    .contact .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+    .contact .text h2 {
+        font-size: 13px;
+    }
+    .flex {
+        margin-left: 15px;
+    }
+    .aboutboxdiv {
+        flex-direction: column;
+        width: auto;
+        margin-left: 2vw;
+        height: auto;
+    }
+    .aboutboxdiv-header {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .aboutboxdiv-header h1 {
+        font-size: 6vh;
+        margin-left: 100px;
+    }
+    .aboutboxdiv-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .login-form {
+        max-width: 100%;
+        width: auto;
+        margin: auto;
+    }
+    .main-container {
+        margin: 7vh 2vh;
+        /* Adjust margins for smaller screens */
+    }
+    .product-container {
+        margin-left: 2vh;
+    }
+    .product-image-container {
+        height: auto;
+        width: 100%;
+    }
+    .product-image-container img {
+        height: auto;
+    }
+    .product-details {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .product-info-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .product-info {
+        font-size: 1.2em;
+    }
+    .kerri {
+        font-size: 4vh;
+    }
+    .flexdetails {
+        margin-top: 10px;
+    }
+    .boxdetails {
+        max-width: 100%;
+        margin-top: 1vh;
+        padding: 1vh;
+    }
+    .boxdetails h1 {
+        font-size: 3vh;
+    }
+    .boxdetails form {
+        height: auto;
+    }
+    .boxdetails input[type="text"],
+    .boxdetails input[type="email"],
+    .boxdetails textarea,
+    .boxdetails input[type="datetime-local"] {
+        width: 100%;
+    }
+    .boxdetails button {
+        font-size: 1.2em;
+    }
+    #main-content-index,
+    #main-content-index2 {
+        margin-left: 2vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+    .card-indexdash {
+        width: 90%;
+        height: auto;
+    }
+    .card-indexdash h2 {
+        font-size: 4vh;
+    }
+    .card-indexdash p {
+        font-size: 3.5vh;
+    }
+    .card-indexdash i {
+        font-size: 12vh;
+        margin-top: 2vh;
+    }
+    .table-dashboard-about {
+        width: 15vh;
+    }
+    .table-dashboard-about th {
+        padding-right: 47vh;
+    }
+    .aboutbutton {
+        padding: 5px 5px;
+        width: 15vh;
+        margin-left: 43vh;
+    }
+}
 
 
 
